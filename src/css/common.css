@@ -1,6 +1,8 @@
 :root {
   --font-heading: 'Sora', sans-serif;
   --font-body: 'Mulish', sans-serif;
+
+  --color-text-primary: #000000;
 }
 
 
@@ -18,15 +20,13 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
-  color: #000;
+  color: var(--color-text-primary);
 }
 
 .container {
   max-width: 320px;
   padding: 0 20px;
   margin: 0 auto;
-  /* max-width: 1158px; */
-  /* padding: 0 15px; */
 }
 
 @media only screen and (min-width: 768px) {
@@ -36,7 +36,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1440px) {
   .container {
     max-width: 1158px;
   }
@@ -45,13 +45,10 @@ body {
 h1,
 h2,
 h3 {
-
-    font-weight: 700;
     margin-top: 0;
     margin-bottom: 0;
 
     font-family: var(--font-heading);
-    font-weight: 400;
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: -0.01em;
