@@ -1,0 +1,73 @@
+<section class="contacts" id="contacts">
+    <div class="container">
+        <h3 class="contacts_subtitle">Connect</h3>
+         <h2 class="contacts_title">Order your unique jewelry</h2>
+          <p class="contacts_description">We'd love to hear more details from you!</p>
+        <address class="address">
+            <ul class="address_list">
+                <li>
+                 <svg class="address_icon" width="32" height="32">
+                     <use href=""></use>
+                 </svg>
+                 <p class="address_title">Email</p>
+                 <a class="address_link" href="mailto:info@handmadejewelry.com" rel="noopener noreferrer">info@handmadejewelry.com</a>               
+                </li>
+                <li>
+                  <svg class="address_icon" width="32" height="32">
+                      <use href=""></use>
+                  </svg>
+                  <p class="address_title">Phone</p>
+                  <a class="address_link" href="tel:+15550000000" rel="noopener noreferrer">+1 (555) 000-0000</a>
+                </li>
+                <li>
+                  <svg class="address_icon" width="32" height="32">
+                      <use href=""></use>
+                  </svg>
+                  <p class="address_title">Office</p>
+                  <a class="address_link" href="https://maps.google.com/?q=76-8+Oakington+Manor+Dr,+London,+UK" target="_blank" rel="noopener noreferrer">76-8 Oakington Manor Dr, London, UK</a>
+                </li>
+            </ul>
+        </address>
+        <form class="contatcs_form">
+            <div class="contacts_form_wrap">
+                <label class="contacts_form_label" for="user-name">Name*</label>
+                <div class="input-wrap">
+                    <input type="text"
+                           class="contacts_form_input"
+                           name="user-name"
+                           pattern="^[a-zA-Z\s\.]{5,28}$"
+                           required
+                           id="user-name"
+                           placeholder="Tony"
+                    />
+                </div>
+            </div>
+            <div class="contacts_form_wrap">
+                <label class="contacts_form_label" for="user-phone">Phone*</label>
+                <div class="input-wrap">
+                    <input type="tel"
+                           class="contacts_form_input"
+                           name="user-phone"
+                           pattern="^+[0-9\s]{14}$"
+                           required
+                           id="user-phone"
+                           placeholder="+1 234 123 23"
+                    />
+                </div>
+            </div>
+            <div class="contacts_form_wrap">
+                <label class="contacts_form_label" for="user-message">Describe what you want</label>
+                <div class="input-wrap">
+                    <textarea
+                           class="contacts_form_textarea"
+                           minlength="2"
+                           maxlength="500"
+                           name="user-message"
+                           id="user-message"
+                           placeholder="Type your message..."></textarea>
+                </div>
+            </div>
+            <button type="submit" class="contacts_form_button">Submit</button>
+        </form>        
+    </div>
+</section>
