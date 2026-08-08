@@ -1,0 +1,201 @@
+.contacts {
+width: 100%;
+margin: 0;
+padding: 64px 0;
+}
+
+.contacts_subtitle {
+font-family: "Mulish", sans-serif;
+font-weight: 600;
+font-size: 16px;
+line-height: 1.50;
+color: #000;
+margin-bottom: 16px;
+}
+
+.contacts_title {
+font-family: "Sora", sans-serif;
+font-weight: 400;
+font-size: 36px;
+line-height: 1.2;
+letter-spacing: -0.01em;
+color: #000;
+margin-bottom: 24px;
+}
+
+.contacts_description {
+font-family: "Mulish", sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.50;
+color: #000;
+margin-bottom: 48px;
+}
+
+.address {
+margin-bottom: 32px;
+}
+
+.address_list {
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 24px 0;
+}
+
+.address_icon {
+fill: #000;
+margin-bottom: 16px;
+}
+
+.address_title {
+font-family: "Sora", sans-serif;
+font-weight: 400;
+font-size: 20px;
+line-height: 1.4;
+letter-spacing: -0.01em;
+color: #000;
+font-style: normal;
+margin-bottom: 8px;
+}
+
+.address_link {
+font-family: "Mulish", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+text-decoration: none;
+text-decoration-color: transparent;
+text-decoration-skip-ink: none;
+font-style: normal;
+color: #000;
+transition: text-decoration-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address_link:hover,
+.address_link:focus {
+text-decoration-color: currentColor;
+text-decoration: underline;
+text-decoration-skip-ink: none;
+}
+
+.address_link:active {
+color: #8668c7;
+}
+
+.address_link.is-inactive {
+color: #000;
+}
+
+.contatcs_form {
+display: flex;
+flex-direction: column;
+}
+
+.contacts_form_wrap {
+display: flex;
+flex-direction: column;
+gap: 8px;
+margin-bottom: 24px;
+}
+
+.contacts_form_label {
+display: block;
+font-family: "Mulish", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+color: #000;
+}
+
+.input-wrap {
+position: relative;
+}
+
+.contacts_form_input {
+  position: static;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  padding: 8px 12px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts_input_error {
+display: none;
+font-family: "Mulish", sans-serif;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+color: #8c0000;
+}
+
+.contacts_form_input::placeholder,
+.contacts_form_textarea::placeholder {
+font-family: "Mulish", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+color: rgba(0, 0, 0, 0.6);
+}
+
+.contacts_form_input:focus,
+.contacts_form_textarea:focus {
+border: 1px solid #ccc16e;
+}
+
+.contacts_form_input:focus::placeholder,
+.contacts_form_textarea:focus::placeholder {
+color: transparent;
+}
+
+.contacts_form_input:user-invalid {
+border: 1px solid #8c0000;
+color: #8c0000;
+}
+
+.contacts_form_input:user-invalid + .contacts_input_error {
+display: block;
+}
+
+.contacts_form_textarea {
+width: 100%;
+height: 180px;
+border: 1px solid rgba(0, 0, 0, 0.15);
+padding: 12px;
+background-color: transparent;
+outline: transparent;
+resize: none;
+padding: 8px 16px;
+}
+
+.contacts_form_button {
+border: 1px solid #ccc16e;
+padding: 6px 12px;
+width: 100%;
+height: 36px;
+font-family: "Mulish", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+color: #000;
+background: #ccc16e;
+}
+
+.contacts_form_button:hover,
+.contacts_form_button:focus {  
+background: transparent;
+}
+
+.contacts_form_button:active {
+box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.32);
+background: #ccc16e;
+}
+
+.contacts_form_button.is-inactive {
+background: #ccc16e;
+opacity: 0.3;
+}
