@@ -1,0 +1,144 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-top {
+    gap: 48px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-top {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-content {
+    gap: 32px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-content {
+    align-items: flex-start;
+  }
+}
+
+.footer-logo {
+  width: 217px;
+  height: 93px;
+  color: var(--color-text-primary);
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-logo {
+    width: 341px;
+    height: 146px
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-logo {
+    width: 84px;
+    height: 36px;
+  }
+}
+
+.footer-socials-list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-social-link {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-nav-list {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+.footer-social-icon {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-social-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+
+
+.footer-bottom {
+  width: 100%;
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-bottom {
+    margin-top: 48px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-bottom {
+    margin-top: 64px;
+  }
+}
+
+.footer-bottom-text {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
