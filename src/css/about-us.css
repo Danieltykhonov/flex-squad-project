@@ -1,0 +1,76 @@
+.about-us {
+  padding-block: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.about-us-container {
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.about-us-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-us-title {
+  font-weight: 400;
+}
+
+.about-us-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.about-us-item-text {
+  display: flex;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.text-leaf::before {
+  content: url('../img/leaf.svg');
+}
+
+.text-donate-heart::before {
+  content: url('../img/donate-heart.svg');
+}
+
+.text-book::before {
+  content: url('../img/book.svg');
+}
+
+@media only screen and (min-width: 768px) {
+  .about-us {
+    padding-block: 112px;
+  }
+}
+
+@media only screen and (min-width: 1312px) {
+  .about-us-container {
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .about-us-img {
+    width: 640px;
+  }
+
+  .about-us-content {
+  }
+
+  .about-us-title {
+    font-size: 48px;
+  }
+}
