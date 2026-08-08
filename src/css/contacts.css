@@ -32,6 +32,11 @@ color: #000;
 margin-bottom: 48px;
 }
 
+.contacts_wrap {
+display: flex;
+flex-direction: column;
+}
+
 .address {
 margin-bottom: 32px;
 }
