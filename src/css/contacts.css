@@ -180,7 +180,6 @@ padding: 8px 16px;
 .contacts_form_button {
 border: 1px solid #ccc16e;
 padding: 6px 12px;
-width: 100%;
 height: 36px;
 font-family: "Mulish", sans-serif;
 font-weight: 500;
@@ -203,4 +202,52 @@ background: #ccc16e;
 .contacts_form_button.is-inactive {
 background: #ccc16e;
 opacity: 0.3;
+}
+
+@media only screen and (min-width: 768px) {
+.address_list {
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: row;
+gap: 0 25px;
+}
+
+.address_item {
+flex-basis: calc((100% - 50px) / 3);
+}
+
+.contacts_form_button {
+width: 249px;
+}
+}
+
+@media only screen and (min-width: 1440px) {
+.contacts_wrap {
+flex-direction: row;
+gap: 32px;
+}
+
+.address {
+  order: 2;
+}
+
+.address_list {
+flex-wrap: wrap;
+flex-direction: row;
+gap: 32px;
+}
+
+.address_item {
+flex-basis: calc((100% - 32px) / 2);
+}
+
+.contatcs_form {
+  order: 1;
+  flex-basis: 50%;
+}
+
+.contacts_form_button {
+width: 192px;
+}
 }
