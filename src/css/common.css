@@ -22,7 +22,11 @@ body {
 }
 
 .container {
+<<<<<<< HEAD
   width: 100%;
+=======
+  max-width: 375px;
+>>>>>>> 878abdb07a62f98ed71c1331c0da3b6c1aadf91b
   padding: 0 20px;
   margin: 0 auto;
 }
