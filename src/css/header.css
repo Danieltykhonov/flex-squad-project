@@ -1,200 +1,162 @@
-/* =========================================
-   1. МОБІЛЬНА ВЕРСІЯ (< 768px)
-   ========================================= */
 .header {
+  width: 100%;
   background-color: #ffffff;
   border-bottom: 1px solid #f0f0f0;
 }
 
 .header-container {
+  width: 100%;
+  height: 72px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 68px;
+
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
-/* Логотип */
 .logo {
   display: inline-flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .logo-icon {
+  display: block;
   width: 160px;
-  height: 68px;
+  height: auto;
+  max-height: 68px;
   fill: var(--color-text-primary);
 }
 
-/* Кнопка відкриття мобільного меню */
 .burger-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
+
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+
   background: transparent;
   border: none;
   color: var(--color-text-primary);
+  cursor: pointer;
 }
 
-.burger-icon,
-.close-icon {
+.burger-btn:focus-visible {
+  outline: 2px solid #ccc16e;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.burger-icon {
+  display: block;
   width: 24px;
   height: 24px;
   fill: currentColor;
-  stroke: currentColor;
 }
 
-/* Приховуємо десктопне меню на мобільних */
 .nav-menu,
 .header-btn {
   display: none;
 }
 
-/* Мобільне меню (Overlay) */
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #ffffff;
-  z-index: 999;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition:
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+/* планшетна*/
 
-.mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.mobile-menu-container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  padding-top: 0;
-  padding-bottom: 32px;
-}
-
-.mobile-menu-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 68px;
-  margin-bottom: 24px;
-}
-
-.mobile-close-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  background: transparent;
-  border: none;
-  color: var(--color-text-primary);
-}
-
-.mobile-nav-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-bottom: 32px;
-}
-
-.mobile-nav-link {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.mobile-menu-btn {
-  width: 100%;
-  padding: 12px 28px;
-  background-color: #ccc16e;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: 500;
-  margin-top: auto;
-}
-/* =========================================
-   2. ПЛАНШЕТНА ТА ДЕСКТОПНА ВЕРСІЇ (768px+)
-   ========================================= */
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Скидаємо рівномірний розподіл */
-    gap: 24px; /* Фіксований відступ між логотипом і меню */
     height: 72px;
+    padding: 0 24px;
+    gap: 32px;
   }
 
   .logo-icon {
     width: 84px;
     height: 36px;
+    max-height: none;
   }
 
-  .burger-btn,
-  .mobile-menu {
+  .burger-btn {
     display: none;
   }
 
   .nav-menu {
     display: block;
-    margin: 0; /* Скидаємо зовнішні відступи */
+    margin: 0;
   }
 
   .nav-list {
     display: flex;
     align-items: center;
     gap: 16px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
   .nav-link {
+    display: inline-block;
+
+    color: var(--color-text-primary);
     font-size: 14px;
     font-weight: 500;
+    line-height: 1.2;
+
+    text-decoration: none;
+    white-space: nowrap;
   }
 
   .nav-link:hover,
-  .nav-link:focus {
+  .nav-link:focus-visible {
+    color: #8668c7;
     text-decoration: underline;
   }
 
-  /* Кнопка залишається справа за рахунок margin-left: auto */
   .header-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-left: auto; /* Відштовхує кнопку на правий край */
+
+    margin-left: auto;
+
     padding: 10px 20px;
+
+    color: #000000;
+    background-color: #ccc16e;
+
+    border: 1px solid transparent;
+    border-radius: 0;
+
     font-size: 14px;
     font-weight: 500;
-    background-color: #ccc16e;
-    border: 1px solid transparent;
-    border-radius: 4px;
+    line-height: 1.2;
+
+    cursor: pointer;
+    white-space: nowrap;
   }
 
   .header-btn:hover,
-  .header-btn:focus {
+  .header-btn:focus-visible {
     background-color: transparent;
     border-color: #ccc16e;
+    outline: none;
   }
 }
 
-/* =========================================
-   3. ДЕСКТОПНА ВЕРСІЯ (1440px+)
-   ========================================= */
-@media screen and (min-width: 1440px) {
+/* комп'ютерна */
+
+@media only screen and (min-width: 1440px) {
   .header-container {
-    gap: 32px; /* Відстань між лого та меню на великих екранах */
+    height: 72px;
+    padding: 0 48px;
+    gap: 40px;
   }
 
   .nav-list {
-    gap: 24px;
+    gap: 32px;
   }
 
   .nav-link {
