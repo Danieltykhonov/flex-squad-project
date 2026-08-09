@@ -1,0 +1,157 @@
+.header {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.header-container {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo-icon {
+  display: block;
+  width: 160px;
+  height: auto;
+  max-height: 68px;
+  fill: var(--color-text-primary);
+}
+
+.burger-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  color: var(--color-text-primary);
+  cursor: pointer;
+}
+
+.burger-btn:focus-visible {
+  outline: 2px solid #ccc16e;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.burger-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.nav-menu,
+.header-btn {
+  display: none;
+}
+
+/* планшетна */
+
+@media only screen and (min-width: 768px) {
+  .header-container {
+    height: 72px;
+    padding: 0 24px;
+    gap: 32px;
+  }
+
+  .logo-icon {
+    width: 84px;
+    height: 36px;
+    max-height: none;
+  }
+
+  .burger-btn {
+    display: none;
+  }
+
+  .nav-menu {
+    display: block;
+    margin: 0;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav-link {
+    display: inline-block;
+    color: var(--color-text-primary);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus-visible {
+    color: #8668c7;
+    text-decoration: underline;
+  }
+
+  .header-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding: 10px 20px;
+    color: #000000;
+    background-color: #ccc16e;
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .header-btn:hover,
+  .header-btn:focus-visible {
+    background-color: transparent;
+    border-color: #ccc16e;
+    outline: none;
+  }
+}
+
+/* комп'ютерна */
+
+@media only screen and (min-width: 1440px) {
+  .header-container {
+    height: 72px;
+    padding: 0 48px;
+    gap: 40px;
+  }
+
+  .nav-list {
+    gap: 32px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+  .header-btn {
+    padding: 12px 28px;
+    font-size: 16px;
+  }
+}
