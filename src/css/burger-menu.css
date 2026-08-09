@@ -1,0 +1,130 @@
+.burger-menu {
+position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    width: 100%;
+    height: 100%;
+
+    background: #fff;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(100%);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.burger-menu.is-open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+    transform: translateX(0);
+}
+
+@media only screen and (min-width: 768px) {
+  .burger-menu {
+    display: none;
+  }
+}
+
+
+.burger-menu-container {
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    padding-bottom: 300px;
+
+
+}
+
+.burger-menu-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-right: -20px;  /* прибирає контейнерний padding-right */
+  padding: 2px 12px 0 0;  /* додає потрібний власний відступ */
+}
+
+.burger-menu-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 24px;
+
+  width: 160px;
+  height: 68px;
+}
+.burger-menu-btn {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    padding: 10px 0 0 0;
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.burger-menu-icon-btn {
+ fill: currentColor;
+}
+
+.burger-menu-nav{
+    display: flex;
+align-items: flex-start;
+justify-content: center;
+flex-direction: column;
+gap: 24px;
+padding-top: 16px;
+}
+.burger-menu-list {
+    display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+}
+
+.burger-menu-bnt-order {
+    display: block;
+    margin-top: 64px;
+    max-width: 335px;
+    border: none;
+    padding: 14px 0;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-weight: 600;
+    font-size: 16px;
+
+    background-color: #ccc16e;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.burger-menu-bnt-order:hover,
+.burger-menu-bnt-order:focus {
+  background-color: transparent;
+  border: 1px solid #ccc16e;
+}
+
+.burger-menu-bnt-order:active {
+  box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.32);
+  background-color: #ccc16e;
+}
+
+
+

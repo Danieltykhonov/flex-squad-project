@@ -53,21 +53,42 @@
   .about-us {
     padding-block: 112px;
   }
+
+  .about-us-img-wraper {
+    width: 704px;
+    height: 456px;
+  }
+
+  .about-us-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 @media only screen and (min-width: 1312px) {
   .about-us-container {
+    width: 1312px;
+    height: 456px;
     padding: 0;
     align-items: center;
     justify-content: center;
     flex-direction: row;
   }
 
-  .about-us-img {
+  .about-us-img-wraper {
     width: 640px;
+    height: 456px;
+  }
+
+  .about-us-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .about-us-content {
+    max-width: 640px;
   }
 
   .about-us-title {
