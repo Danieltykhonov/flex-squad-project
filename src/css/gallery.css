@@ -68,22 +68,18 @@
         margin-bottom: 20px;
     }
 
-    /* 1-й елемент (браслет) — квадрат */
     .gallery-item:nth-child(1) .gallery-image {
         aspect-ratio: 1 / 1;
     }
 
-    /* 2-й елемент (кулон) — прямокутник, нижчий */
     .gallery-item:nth-child(2) .gallery-image {
         aspect-ratio: 640 / 426;
     }
 
-    /* 3-й елемент (браслет на руці) — прямокутник, нижчий */
     .gallery-item:nth-child(3) .gallery-image {
         aspect-ratio: 640 / 426;
     }
 
-    /* 4-й елемент (сережки) — квадрат */
     .gallery-item:nth-child(4) .gallery-image {
         aspect-ratio: 1 / 1;
     }
