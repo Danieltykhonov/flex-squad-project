@@ -1,0 +1,140 @@
+.hero.section {
+  padding-top: 160px;
+  padding-bottom: 152px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero {
+  background-color: #000000;
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/hero-img@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 375px;
+}
+
+@media screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image:
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../img/hero-img@2x.jpg);
+  }
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 335px;
+}
+
+.hero-title {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: var(--font-heading);
+  letter-spacing: -0.01em;
+  line-height: 120%;
+  text-align: left;
+}
+
+.hero-text {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--font-body);
+  letter-spacing: 0;
+  line-height: 150%;
+  text-align: left;
+}
+
+.hero-link {
+  display: block;
+  width: 335px;
+  color: var(--color-text-primary);
+  background-color: #ccc16e;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--font-body);
+  letter-spacing: 0;
+  line-height: 150%;
+  text-align: center;
+
+  margin-top: 32px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: 1px solid #ccc16e;
+  cursor: pointer;
+
+  transition:
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-link.is-active {
+  box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.32);
+  border-color: transparent;
+}
+
+.hero-link.inactive {
+  opacity: 0.3;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .hero.section {
+    padding-bottom: 435px;
+  }
+
+  .hero {
+    max-width: 768px;
+  }
+
+  .hero-link {
+    width: 217px;
+  }
+
+  .hero-content {
+    max-width: 513px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero.section {
+    padding-top: 224px;
+    padding-bottom: 360px;
+  }
+
+  .hero {
+    max-width: 1440px;
+  }
+
+  .hero-link {
+    width: 192px;
+  }
+
+  .hero-content {
+    max-width: 640px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+  }
+}
