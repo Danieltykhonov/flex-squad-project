@@ -230,6 +230,7 @@ gap: 32px;
 
 .address {
   order: 2;
+  flex-basis: 50%;
 }
 
 .address_list {
