@@ -90,10 +90,12 @@ color: #8668c7;
 }
 
 .address_link.is-inactive {
-color: #000;
+opacity: 0.3;
+pointer-events: none;
+cursor: not-allowed;
 }
 
-.contatcs_form {
+.contacts_form {
 display: flex;
 flex-direction: column;
 }
@@ -170,7 +172,6 @@ display: block;
 width: 100%;
 height: 180px;
 border: 1px solid rgba(0, 0, 0, 0.15);
-padding: 12px;
 background-color: transparent;
 outline: transparent;
 resize: none;
@@ -202,6 +203,8 @@ background: #ccc16e;
 .contacts_form_button.is-inactive {
 background: #ccc16e;
 opacity: 0.3;
+pointer-events: none;
+cursor: not-allowed;
 }
 
 @media only screen and (min-width: 768px) {
