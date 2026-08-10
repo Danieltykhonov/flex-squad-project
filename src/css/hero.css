@@ -60,7 +60,8 @@
 
 .hero-link {
   display: block;
-  width: 335px;
+  width: 100%;
+  max-width: 335px;
   color: var(--color-text-primary);
   background-color: #ccc16e;
   font-size: 16px;
@@ -110,7 +111,8 @@
   }
 
   .hero-link {
-    width: 217px;
+
+    max-width: 217px;
   }
 
   .hero-content {
@@ -128,8 +130,8 @@
     max-width: 1440px;
   }
 
-  .hero-link {
-    width: 192px;
+  .hero-link { 
+    max-width: 192px;
   }
 
   .hero-content {
