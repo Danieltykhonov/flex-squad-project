@@ -4,6 +4,9 @@ A landing page for a handmade jewellery online store, developed by the **Flex Sq
 
 🔗 **Live Demo:** [https://danieltykhonov.github.io/flex-squad-project/](https://danieltykhonov.github.io/flex-squad-project/)
 
+ 🔗 **Live Presentation:** [View Presentation](https://1drv.ms/p/c/16d990d2755e6799/IQCFXPio287BQbY9XeykjlsxATPNyYIWUA6lhtxKGwxIeFE?e=3VvVoi)
+
+
 ## About the Project
 
 A single-page responsive website featuring Hero, About Us, Benefits, Gallery, Testimonials, Contacts, and Footer sections. The project was implemented in three layout versions: desktop, tablet, and mobile.
